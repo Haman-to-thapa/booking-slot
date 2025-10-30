@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "npm install --save-dev @types/express @types/cors"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,8 @@
     "mongoose": "^8.19.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
     "@types/node": "^24.9.2"
   }
 }
